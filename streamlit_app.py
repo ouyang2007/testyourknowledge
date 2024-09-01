@@ -5,12 +5,7 @@ import streamlit as st
 
 mood = 'humorous'
 question_area = 'Cognitive Science'
-
-######## Please hide the password as a environment variable #########
-# openai.api_key  = os.getenv('OPENAI_API_KEY')
-david_openai_passwd = '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'
-openai.api_key  = david_openai_passwd
-######################################################################
+openai.api_key  = os.getenv('OPENAI_API_KEY')
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
 
